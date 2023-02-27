@@ -17,7 +17,7 @@ class ListSpecificTaskView(MethodView):
     method = ["GET"]
 
     def get(self, id):
-        task = Tasks.get(id)
+        task = Tasks.query.get(id)
         task_json = task_schema.dump(task)
 
         return task_json
