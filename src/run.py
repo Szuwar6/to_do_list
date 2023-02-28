@@ -1,5 +1,4 @@
 from src import create_app, db
-from src.models.tasks import Tasks
 
 
 def create_db(app):

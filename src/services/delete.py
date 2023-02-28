@@ -14,4 +14,3 @@ class DeleteTaskView(MethodView):
             db.session.commit()
             return "Task has been deleted.", 200
         return "Task not found", 404
-

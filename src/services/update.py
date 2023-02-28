@@ -4,6 +4,7 @@ from src.models.tasks import Tasks
 from src.serializers.tasks import task_schema
 from src import db
 
+
 class UpdateTaskView(MethodView):
     methods = ["PUT"]
 

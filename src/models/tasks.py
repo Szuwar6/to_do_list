@@ -6,4 +6,3 @@ class Tasks(db.Model):
     title = db.Column(db.String(70), nullable=False)
     details = db.Column(db.Text, nullable=True)
     author = db.Column(db.String(70), nullable=False)
-

@@ -5,8 +5,6 @@ from src.serializers.tasks import task_schema
 from src.models.helpers import save_to_db
 
 
-
-
 class CreateTaskView(MethodView):
     methods = ["POST"]
 
