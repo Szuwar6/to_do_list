@@ -11,7 +11,8 @@ class CreateTaskView(MethodView):
     def post(self):
         body = request.get_json()
         id = body.get('id')
-        if Tasks.query.filter_by(id=id) is not None:
+        task = Tasks.query.filter_by(id=id).first()
+        if task is not None:
             return "Task already exists", 409
 
         task = task_schema.load(body)
